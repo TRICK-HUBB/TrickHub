@@ -1,5 +1,6 @@
 local PlaceScripts = {
     [120249927456668] = "https://raw.githubusercontent.com/TRICK-HUBB/TrickHub/refs/heads/main/DeltaRhythm",
+    [6403373529] = "https://raw.githubusercontent.com/TRICK-HUBB/TrickHub/refs/heads/main/Get%20All%20Gloves"
 }
 
 local placeId = game.PlaceId
