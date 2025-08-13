@@ -1,0 +1,26 @@
+-- Note: This only gives you Badge Gloves!
+local lobby = game:GetService("Workspace"):FindFirstChild("Lobby")
+if lobby then
+    for _, part in ipairs(lobby:GetChildren()) do
+        if part:IsA("BasePart") then
+            print("Lobby object Z position:", part.CFrame.Z)
+        end
+    end
+else
+    warn("Lobby not found in Workspace")
+end
+
+local networkFolder = game:GetService("ReplicatedStorage"):FindFirstChild("_NETWORK")
+if networkFolder then
+    for _, obj in ipairs(networkFolder:GetChildren()) do
+        for _, v in pairs(game.Workspace.Lobby:GetChildren()) do
+        if obj:IsA("RemoteEvent") and v:IsA("MeshPart") then
+            obj:FireServer(v.Name)
+        else
+            warn(obj.Name .. " is not a RemoteEvent, skipping.")
+        end
+         end
+    end
+else
+    warn("_NETWORK folder not found in ReplicatedStorage")
+end
