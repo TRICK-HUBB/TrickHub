@@ -5,3 +5,4 @@ We hope that all developers that we make a program on, see this as a helpful too
 
 # This is the only Official Github
 This is also the only official site we're on: https://rscripts.net/@trickhub
+Everything is open source, as we have nothing to hide!
