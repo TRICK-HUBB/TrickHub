@@ -1,1 +1,17 @@
+local PlaceScripts = {
+    [120249927456668] = "",
+}
 
+local placeId = game.PlaceId
+local scriptUrl = PlaceScripts[placeId]
+
+if scriptUrl then
+    local success, err = pcall(function()
+        loadstring(game:HttpGet(scriptUrl))()
+    end)
+  if not success then
+warn("error")
+end
+else
+   warn("unsupported Place")
+end
