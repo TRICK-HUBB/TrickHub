@@ -118,7 +118,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EquipT
    end,
 })
 local INFOANIMATION = Server:CreateLabel("This only gives you the tools for the Animation. But atleast it's not visual!", "info")
-local ClientsidedStuff = Server:CreateLabel("This is all visual, only you'll see this. Put to 0 to disable", "info")
+local ClientsidedStuff = Client:CreateLabel("This is all visual, only you'll see this. Put to 0 to disable", "info")
 local Slider = Client:CreateSlider({
    Name = "Top 10 Winstreak ChatTag",
    Range = {0, 10},
