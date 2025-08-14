@@ -55,7 +55,7 @@ local ScoreExploitToggle = Main:CreateToggle({
 
 warn("no")
 local args = {
-	999,
+	100000000000000,
 	"Black Knife X",
 	false,
 	"Default",
